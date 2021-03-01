@@ -2,9 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
     android:paddingHorizontal="40dp"
     tools:context=".RegisterActivity">
 
@@ -12,56 +13,55 @@
         android:id="@+id/hello_image"
         android:layout_width="215dp"
         android:layout_height="65dp"
-        android:src="@drawable/hello"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="40dp"
-        android:layout_gravity="center_horizontal"
-        />
-    
+        android:src="@drawable/hello" />
+
     <EditText
         android:id="@+id/name_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_margin"
         android:hint="@string/name"
         android:inputType="text"
-        android:layout_marginTop="@dimen/input_margin"
-        />
+        android:textColor="@color/black"/>
 
     <EditText
         android:id="@+id/last_name_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_margin"
         android:hint="@string/last_name"
         android:inputType="text"
-        android:layout_marginTop="@dimen/input_margin"
-        />
+        android:textColor="@color/black"/>
 
     <EditText
         android:id="@+id/e_mail_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_margin"
         android:hint="@string/e_mail"
         android:inputType="textEmailAddress"
-        android:layout_marginTop="@dimen/input_margin"
-        />
+        android:textColor="@color/black"/>
 
     <EditText
         android:id="@+id/password_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_margin"
         android:hint="@string/password"
         android:inputType="textPassword"
-        android:layout_marginTop="@dimen/input_margin"
-        />
+        android:textColor="@color/black"/>
 
     <CheckBox
         android:id="@+id/check_terms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/terms"
         android:layout_marginTop="@dimen/input_margin"
+        android:text="@string/terms"
         android:textStyle="italic"
-        />
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/sign_in_button"
@@ -71,7 +71,6 @@
         android:layout_marginTop="30dp"
         android:background="@drawable/round_button"
         android:text="@string/sign_in"
-        android:textColor="@color/dusty_white"
-        />
+        android:textColor="@color/dusty_white" />
 
 </LinearLayout>
